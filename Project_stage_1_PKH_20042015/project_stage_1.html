@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html> <!-- top level tag> -->
+  <head> <!-- head tag, where two things should be included:
+	- link to CSS style file
+	- title
+-->
+    <link rel="stylesheet" type="text/css" href="style_project_stage_1.css">
+  	 <title>Introduction to programming, summer 2015</title>
+  </head>
+<body>
+
+  <ul class="TableOfContents">
+    <li class="toc_item"> <a href="#web">web </a></li> 
+    <li class="toc_item"><a href="#html">html</a></li>
+    <li class="toc_item"><a href="#css">css</a></li>
+  </ul>  
+  
+  <h1> introduction to programming </h1>
+    
+  <div class="main_point"> 
+
+    <h2 id="web"> web basics </h2>
+
+    Computers request over internet information from servers, which is then transmitted through HTML protocol and displayed in a web browser. There are multiple different web browsers available, not always compatible between each other. <br>
+    
+    HTML stands for Hypertext Mark-up language. Unlike text editor (e.g Word or Pages) HTML belongs to the category - what you see is not what you get. The website has to be coded first, in order for the web browser to display it. 
+    
+    <div class="key_concepts">
+
+      <h3> key concepts: </h3>
+
+      tags, inline elements, block elements, void tags, container elements (span/div)
+
+    </div> <!-- closing key_concepts -->
+     
+      
+    
+    <div class="main_point_links">
+      <h3> links:</h3>
+    <!-- not using ul/ol/li on purpose -->
+      01   GitHub <span class="link"><a href="https://github.com/">https://github.com/</a> </span><br>
+      02   CodePen <span class="link"><a href="http://codepen.io/">http://codepen.io/</a></span><br>
+      03   Scratchpad <span class="link"><a href="http://scratchpad.io/"> http://scratchpad.io/</a></span><br>
+      04   Codepen examples <span class="link"><a href="http://learn-2-code.appspot.com/code_pen_examples/#azYrBM"> http://learn-2-code.appspot.com/code_pen_examples/#azYrBM </a></span><br>
+      05   difference between elements and tags: <span class="link"> <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444 </a></span><br>
+      06   video on how the web works <span class="link"> <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496"> https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496</a></span><br>
+
+    </div> <!-- closing main_point_links --> 
+  </div> <!-- closing main_point_web_basics -->
+ 
+  <div class="main_point">
+
+      <h2 id="html"> html basics </h2>
+
+      An HTML documents needs to follow a certain structure for it to work (to be correctly interpreted by web browsers):
+
+      <ol class="numbered_list">
+        <li>document type tag </li>
+        <li>html tag / top level tag </li>
+        <li>head tag: 
+          <ol>
+          <li> link tag (to .css style file) </li>
+          <li> title tag </li> </ol>
+        <li> body tag
+      </ol>
+
+  The term 
+      <span class="highlighted_text">side-way triangles</span> 
+      refers to the branching structure of HTML pages, where:
+    <div class="unnumbered_list">
+        - opening / closing tags can be either text or another element <br>
+        - DOM - document object model, refer to the tree-like structure of a webpage <br>
+    </div> <br>
+
+    Front-end development means translating graphical form or design into HTML page - e.g. implementing/translating graphical design into a webpage. <br>
+          
+    HTML controls the structure of a website, while CSS controls its style (how the webpage looks).
+
+      <h4> boxes </h4>
+        Websites follow box design, simple, yet important concept. When building websites, we may think of giving them box-like structure, starting with/from big to small. Sketching this with pencil and paper usually helps with first stages of website building. <br>
+
+        Boxes are defined with div tags, a block element, which can enclose multiple echelons of indented div-boxes in itself. 
+        By boxyfying website content, we can group the content in classes. This allows us to specify how particular classes should look like - this can be done with CSS. E.g. we can design how headers in each particular level look like, without having to do that every time in HTML code. <br>
+        <br>
+        
+        <div class="box_margin"> margin 
+          <div class="box_boarder"> boarder 
+            <div class="box_padding"> padding
+              <div class="box_content">content 
+                <div class="box_content_2">
+                  <table class="table">
+                    <tr> 
+                      <td>content</td>
+                      <td>the content of the box, where text and images appear</td>
+                    </tr>  
+                    <tr>
+                      <td> padding</td>
+                      <td> clears an area around the content, the padding is transparent</td>
+                    </tr>
+                    <tr>
+                      <td>border </td>
+                      <td> a border that goes around the padding and content</td>
+                    </tr>
+                    <tr>
+                      <td>margin </td>
+                      <td> clears an area outside the border, the margin is transparent</td>
+                    </tr>
+
+                  </table>
+        </div></div> </div> </div> </div> 
+          
+      
+        
+
+      <p>Hints for structuring a website: <p>
+
+      <ol class="numbered_list">
+
+        <li>structure of the page, get it by boxyfying it, look for natural boxes </li>
+        <li>size of the boxes, repeated styles of semantic </li> 
+        <li>where to position them on the page </li>
+        <li>write the HTML </li>
+        <li>apply styles (from BIGGEST to smallest) </li>
+        <li>fix things/</li>
+      </ol>
+      
+    <div class="key_concepts"> <h3> key concepts: </h3>
+
+      DOM, HTML structure, box, Developer Tools
+
+    </div> <!-- closing key_concepts -->
+    
+    <div class="main_point_links">
+
+      <h3> links:</h3>
+
+        <!-- not using ul/ol/li on purpose -->
+        01   HTML tutorial: <span class="link"> <a href="http://www.w3schools.com/"> http://www.w3schools.com/ </a></span><br>
+        02   The W3C Markup Validation Service <span class="link"> <a href="http://validator.w3.org/#validate_by_input">http://validator.w3.org/#validate_by_input </a></span><br>
+        03   The CSS box model <span class="link"><a href="http://www.w3schools.com/css/css_boxmodel.asp">http://www.w3schools.com/css/css_boxmodel.asp </a></span>
+        </div> <!-- closing main_point_links -->
+      </div> 
+ 
+
+  <div class="main_point"> 
+
+    <h2 id="css"> css </h2>
+
+      Apart from putting the style in the style .css file, it is also possible to add a CSS style without linking to the CSS file, one can put the style between style tags.<br>
+
+      With CSS the most specific rule is applied to every element - cascading, going down until the most specific of the rules applies. 
+
+      <h4> avoiding repetition </h4>
+
+      One of the prevalent ideas behind CSS is to help avoiding repetition. Having declared/specified style of an element once, one can keep using this element without having to specify the style over and over again. Each element can have specific style attached to it (e.g. links section). This not only saves time, ensures consistent style throught document/website, but also helps avoid mistakes.
+
+      <h4>inheritance in CSS </h4> from wikipedia:
+     
+      <div class="quote">
+        Inheritance is a key feature in CSS, it relies on the ancestor-descendant relationship to operate. Inheritance is the mechanism by which properties are applied not only to a specified element, but also to its descendants. Inheritance relies on the document tree, which is the hierarchy of (X)HTML elements in a page based on nesting. Descendant elements may inherit CSS property values from any ancestor element enclosing them. In general, descendant elements inherit text-related properties, but box-related properties are not inherited.<br>
+
+      <h4>Properties that can be inherited are: </h4>
+        <div class="highlighted_text">        
+             color,  font, 
+            letter-spacing, 
+             line-height, 
+             list-style, 
+             text-align, 
+             text-indent, 
+             text-transform, 
+             visibility, 
+             white-space and 
+            - word-spacing. 
+          </div> <br>
+
+      <h4>Properties that cannot be inherited are: </h4>
+          <div class="highlighted_text">
+          background, border, display, float and clear, height and width, margin, min- and max-height and -width, outline, overflow, padding, position, text-decoration, vertical-align and z-index. </div><br>
+
+      Inheritance prevents certain properties from being declared over and over again in a style sheet, allowing the software developers to write less CSS. It enhances faster-loading of web pages by users and enables the clients to save money on bandwidth and development costs.
+      selector - select them, either specifically e.g. p (paragraph) or my class (e.g. description) 
+
+      </div> <!-- closing quote -->
+    <div class="key_concepts">
+
+      <h3> key concepts: </h3>
+
+        inheritance, avoiding repetition
+    </div> 
+
+   <div class="main_point_links">
+
+    <h3> links:</h3>
+      01 CSS inheritance (Wikipedia): <span class="link"> <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance </a></span><br>
+
+      02 How CSS Selectors Work | CSS-Tricks <span class="link"><a href="https://css-tricks.com/how-css-selectors-work/"> https://css-tricks.com/how-css-selectors-work/ </a></span><br>
+
+      03 The W3C CSS Validation Service <span class="link"><a href="http://jigsaw.w3.org/css-validator/#validate_by_input">http://jigsaw.w3.org/css-validator/#validate_by_input</a> </span><br>
+
+      04 font-variant - CSS <span class="link"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant">ttps://developer.mozilla.org/en-US/docs/Web/CSS/font-variant </a> </span><br>
+
+      05 A Complete Guide to Flexbox <span class="link"> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a> </span>
+
+    </div>
+  </div> <!--closing maing point on CSS --> 
+</body>
+</html>
